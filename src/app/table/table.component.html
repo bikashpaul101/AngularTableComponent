@@ -1,0 +1,14 @@
+<table class="table table-bordered table-hover">
+    <thead style="background-color: #f2f2f2">
+        <tr >
+            <td *ngFor="let column of coloumnset">{{column.aliase}}</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of dataset">
+            <td *ngFor="let column of coloumnset">
+                {{data[column.key]}}
+            </td>
+        </tr>
+    </tbody>
+</table>
